@@ -77,11 +77,8 @@ WSGI_APPLICATION = 'DemoDb.wsgi.application'
 
 DATABASES = {
     'default': {    
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'db1'  ,
-        'USER':"root",
-        'PASSWORD':"root",
-        'HOST':"localhost"  
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':  BASE_DIR/'db.sqlite3'  ,  
     }
 }
 
